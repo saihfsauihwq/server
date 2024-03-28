@@ -1,0 +1,22 @@
+[
+  "entity.minecraft.armor_stand",
+  "entity.minecraft.pig",
+  "entity.minecraft.cow",
+  "entity.minecraft.sheep",
+  "entity.minecraft.painting",
+  "entity.minecraft.boat",
+  "entity.minecraft.chest_minecart",
+  "entity.minecraft.wolf",
+  "entity.minecraft.cat",
+  "entity.minecraft.villager",
+  "entity.minecraft.iron_golem",
+  "entity.minecraft.snow_golem",
+  "entity.minecraft.chicken",
+  "entity.minecraft.command_block_minecart",
+  "entity.minecraft.minecart",
+  "entity.minecraft.furnace_minecart",
+  "entity.minecraft.furnace_minecart",
+  "entity.minecraft.hopper_minecart",
+  "entity.minecraft.spawner_minecart",
+  "entity.minecraft.tnt_minecart"
+]

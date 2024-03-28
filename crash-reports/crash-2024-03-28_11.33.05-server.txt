@@ -1,0 +1,141 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2024-03-28 11:33:05
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Failed to initialize server
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:626) ~[server-1.19.2-20220805.130853-srg.jar%23223!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:244) ~[server-1.19.2-20220805.130853-srg.jar%23223!/:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:mixin:A}
+	at java.lang.Thread.run(Thread.java:842) [?:?] {re:mixin}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 307959296 bytes (293 MiB) / 956301312 bytes (912 MiB) up to 2095054848 bytes (1998 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+	Identifier: Intel64 Family 6 Model 140 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 3.00
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x9a78
+	Graphics card #0 versionInfo: DriverVersion=30.0.101.1692
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 23630.56
+	Virtual memory used (MB): 12661.17
+	Swap memory total (MB): 15639.25
+	Swap memory used (MB): 1264.18
+	JVM Flags: 0 total; 
+	Server Running: true
+	Data Packs: vanilla, mod:awesomedungeonend, mod:playeranimator (incompatible), mod:treeharvester, mod:jei (incompatible), mod:epic_stats, mod:stealing_villagers, mod:wom (incompatible), mod:libraryferret, mod:epicsamurai, mod:caelus (incompatible), mod:sophisticatedcore (incompatible), mod:waystones (incompatible), mod:goldenhopper (incompatible), mod:epicfight (incompatible), mod:golemsarefriends (incompatible), mod:journeymap (incompatible), mod:citadel, mod:artifacts, mod:configured (incompatible), mod:yungsapi, mod:mixinextras (incompatible), mod:neruina (incompatible), mod:sophisticatedbackpacks (incompatible), mod:guardvillagers (incompatible), mod:mahoutsukai, mod:balm (incompatible), mod:mythicmounts, mod:cloth_config (incompatible), mod:forge, mod:ctov (incompatible), mod:travelerstitles, mod:leavesbegone (incompatible), mod:twilightforest (incompatible), mod:tenshilib (incompatible), mod:smoothchunk (incompatible), mod:morevillagers, mod:terrablender, mod:lag_removal (incompatible), mod:bettercombat (incompatible), mod:awesomedungeonnether, mod:mixinsquared (incompatible), mod:endrem, mod:weaponmaster (incompatible), mod:cataclysm (incompatible), mod:curios, mod:patchouli (incompatible), mod:collective, mod:workers (incompatible), mod:irons_spellbooks (incompatible), mod:bettervillage, mod:ctov_waystonecompat_mr, mod:deeperdarker (incompatible), mod:architectury (incompatible), mod:magistuarmory (incompatible), mod:ferritecore (incompatible), mod:aiimprovements, mod:cupboard (incompatible), mod:betterendisland (incompatible), mod:puzzleslib (incompatible), mod:smallships (incompatible), mod:improvedmobs (incompatible), mod:expandability (incompatible), mod:geckolib3 (incompatible), mod:celestisynth (incompatible), mod:recruits (incompatible)
+	World Generation: Stable
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.9.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.9.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.9.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.9.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.3.9.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		awesomedungeonend-forge-1.19.2-3.1.1.jar          |Awesome dungeon the end       |awesomedungeonend             |3.1.1               |DONE      |Manifest: NOSIGNATURE
+		player-animation-lib-forge-1.0.2.jar              |Player Animator               |playeranimator                |1.0.2               |DONE      |Manifest: NOSIGNATURE
+		treeharvester-1.19.2-8.4.jar                      |Tree Harvester                |treeharvester                 |8.4                 |DONE      |Manifest: NOSIGNATURE
+		jei-1.19.2-forge-11.6.0.1018.jar                  |Just Enough Items             |jei                           |11.6.0.1018         |DONE      |Manifest: NOSIGNATURE
+		EpicStats1.0.8_PE.jar                             |Epic Stats                    |epic_stats                    |1.0.8               |DONE      |Manifest: NOSIGNATURE
+		stealing_villagers-forge-1.19.2-1.0.0.jar         |Stealing the villagers        |stealing_villagers            |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		WeaponsOfMiracles-19.1.7.35.1.jar                 |Weapons of Minecraft          |wom                           |19.1.7.35.1         |DONE      |Manifest: NOSIGNATURE
+		libraryferret-forge-1.19.2-4.0.0.jar              |Library ferret                |libraryferret                 |4.0.0               |DONE      |Manifest: NOSIGNATURE
+		epicsamurai-0.0.17-1.19.2-forge.jar               |Epic Samurai                  |epicsamurai                   |0.0.17-1.19.2-forge |DONE      |Manifest: NOSIGNATURE
+		caelus-forge-1.19.2-3.0.0.6.jar                   |Caelus API                    |caelus                        |1.19.2-3.0.0.6      |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.19.2-0.5.106.503.jar          |Sophisticated Core            |sophisticatedcore             |1.19.2-0.5.106.503  |DONE      |Manifest: NOSIGNATURE
+		waystones-forge-1.19.2-11.4.2.jar                 |Waystones                     |waystones                     |11.4.2              |DONE      |Manifest: NOSIGNATURE
+		goldenhopper-1.2.8-1.19.jar                       |Golden Hopper                 |goldenhopper                  |1.2.8               |DONE      |Manifest: NOSIGNATURE
+		EpicFight-19.5.18.jar                             |Epic Fight                    |epicfight                     |19.5.18             |DONE      |Manifest: NOSIGNATURE
+		golemsarefriends-1.19.2-0.1.0.1.jar               |Golems Are Friends Not Fodder |golemsarefriends              |1.19.2-0.1.0.1      |DONE      |Manifest: NOSIGNATURE
+		journeymap-1.19.2-5.9.7-forge.jar                 |Journeymap                    |journeymap                    |5.9.7               |DONE      |Manifest: NOSIGNATURE
+		citadel-2.1.4-1.19.jar                            |Citadel                       |citadel                       |2.1.4               |DONE      |Manifest: NOSIGNATURE
+		artifacts-1.19.2-5.0.4.jar                        |Artifacts                     |artifacts                     |1.19.2-5.0.4        |DONE      |Manifest: NOSIGNATURE
+		configured-2.1.1-1.19.2.jar                       |Configured                    |configured                    |2.1.1               |DONE      |Manifest: NOSIGNATURE
+		YungsApi-1.19.2-Forge-3.8.10.jar                  |YUNG's API                    |yungsapi                      |1.19.2-Forge-3.8.10 |DONE      |Manifest: NOSIGNATURE
+		mixinextras-forge-0.2.0.jar                       |MixinExtras                   |mixinextras                   |0.2.0               |DONE      |Manifest: NOSIGNATURE
+		neruina-1.3.0-forge+1.18.2-1.20.1.jar             |Neruina                       |neruina                       |1.3.0               |DONE      |Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.19.2-3.19.1.960.jar      |Sophisticated Backpacks       |sophisticatedbackpacks        |1.19.2-3.19.1.960   |DONE      |Manifest: NOSIGNATURE
+		guardvillagers-1.19.2-1.5.8.jar                   |Guard Villagers               |guardvillagers                |1.19.2-1.5.8        |DONE      |Manifest: NOSIGNATURE
+		mahoutsukai-1.19.2-v1.34.59.jar                   |Mahou Tsukai                  |mahoutsukai                   |1.19.2-v1.34.59     |DONE      |Manifest: NOSIGNATURE
+		balm-forge-1.19.2-4.6.0.jar                       |Balm                          |balm                          |4.6.0               |DONE      |Manifest: NOSIGNATURE
+		mythicmounts-19.2-7.2.1-forge.jar                 |MythicMounts                  |mythicmounts                  |19.2-7.3-forge      |DONE      |Manifest: NOSIGNATURE
+		cloth-config-8.3.103-forge.jar                    |Cloth Config v8 API           |cloth_config                  |8.3.103             |DONE      |Manifest: NOSIGNATURE
+		forge-1.19.2-43.3.9-universal.jar                 |Forge                         |forge                         |43.3.9              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		ctov-3.2.6c.jar                                   |ChoiceTheorem's Overhauled Vil|ctov                          |3.2.6c              |DONE      |Manifest: NOSIGNATURE
+		TravelersTitles-1.19.2-Forge-3.1.2.jar            |Traveler's Titles             |travelerstitles               |1.19.2-Forge-3.1.2  |DONE      |Manifest: NOSIGNATURE
+		LeavesBeGone-v4.0.1-1.19.2-Forge.jar              |Leaves Be Gone                |leavesbegone                  |4.0.1               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		twilightforest-1.19.2-4.2.1518-universal.jar      |The Twilight Forest           |twilightforest                |4.2.1518            |DONE      |Manifest: NOSIGNATURE
+		server-1.19.2-20220805.130853-srg.jar             |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: NOSIGNATURE
+		tenshilib-1.19.2-1.6.15-forge.jar                 |TenshiLib                     |tenshilib                     |1.19.2-1.6.15       |DONE      |Manifest: NOSIGNATURE
+		smoothchunk-1.19.2-3.5.jar                        |Smoothchunk mod               |smoothchunk                   |1.19.2-3.5          |DONE      |Manifest: NOSIGNATURE
+		morevillagers-forge-1.19-4.0.3.jar                |More Villagers                |morevillagers                 |4.0.3               |DONE      |Manifest: NOSIGNATURE
+		TerraBlender-forge-1.19.2-2.0.1.166.jar           |TerraBlender                  |terrablender                  |2.0.1.166           |DONE      |Manifest: NOSIGNATURE
+		lagremoval-1.1.1.jar                              |lag_removal                   |lag_removal                   |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		bettercombat-forge-1.7.1+1.19.jar                 |Better Combat                 |bettercombat                  |1.7.1+1.19          |DONE      |Manifest: NOSIGNATURE
+		awesomedungeonnether-forge-1.19.2-3.1.1.jar       |Awesome dungeon nether        |awesomedungeonnether          |3.1.1               |DONE      |Manifest: NOSIGNATURE
+		mixinsquared-forge-0.1.1.jar                      |MixinSquared                  |mixinsquared                  |0.1.1               |DONE      |Manifest: NOSIGNATURE
+		endrem_forge-5.2.1-R-1.19.X.jar                   |End Remastered                |endrem                        |5.2.1-R-1.19.2      |DONE      |Manifest: NOSIGNATURE
+		weaponmaster-multiplayer-forge-1.19.2-3.0.5.jar   |YDM's Weapon Master           |weaponmaster                  |3.0.5               |DONE      |Manifest: NOSIGNATURE
+		L_Enders_Cataclysm-1.38+-1.19.2.jar               |Cataclysm Mod                 |cataclysm                     |1.0                 |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.19.2-5.1.4.4.jar                   |Curios API                    |curios                        |1.19.2-5.1.4.4      |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.19.2-77.jar                           |Patchouli                     |patchouli                     |1.19.2-77           |DONE      |Manifest: NOSIGNATURE
+		collective-1.19.2-7.23.jar                        |Collective                    |collective                    |7.23                |DONE      |Manifest: NOSIGNATURE
+		workers-1.19.2-1.7.6.jar                          |Workers Mod                   |workers                       |1.7.6               |DONE      |Manifest: NOSIGNATURE
+		irons_spellbooks-1.19.2-2.1.2.jar                 |Iron's Spells 'n Spellbooks   |irons_spellbooks              |1.19.2-2.1.2        |DONE      |Manifest: NOSIGNATURE
+		bettervillage-forge-1.19.2-3.2.0.jar              |Better village                |bettervillage                 |3.1.0               |DONE      |Manifest: NOSIGNATURE
+		ctov-waystone-compat-1.0.jar                      |ChoiceTheorem's Overhauled Vil|ctov_waystonecompat_mr        |1.0                 |DONE      |Manifest: NOSIGNATURE
+		deeperdarker-forge-1.19.2-1.2.2.jar               |Deeper and Darker             |deeperdarker                  |1.2.2               |DONE      |Manifest: NOSIGNATURE
+		architectury-6.5.85-forge.jar                     |Architectury                  |architectury                  |6.5.85              |DONE      |Manifest: NOSIGNATURE
+		[1.19.2-forge]-Epic-Knights-8.11.jar              |Epic Knights Mod              |magistuarmory                 |8.11                |DONE      |Manifest: NOSIGNATURE
+		ferritecore-5.0.3-forge.jar                       |Ferrite Core                  |ferritecore                   |5.0.3               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		AI-Improvements-1.19.2-0.5.2.jar                  |AI-Improvements               |aiimprovements                |0.5.2               |DONE      |Manifest: NOSIGNATURE
+		cupboard-1.19.2-2.1.jar                           |Cupboard utilities            |cupboard                      |1.19.2-2.1          |DONE      |Manifest: NOSIGNATURE
+		YungsBetterEndIsland-1.19.2-Forge-1.0.jar         |YUNG's Better End Island      |betterendisland               |1.19.2-Forge-1.0    |DONE      |Manifest: NOSIGNATURE
+		PuzzlesLib-v4.4.3-1.19.2-Forge.jar                |Puzzles Lib                   |puzzleslib                    |4.4.3               |DONE      |Manifest: 9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		smallships-forge-1.19.2-2.0.0-a2.3.jar            |Small Ships                   |smallships                    |2.0.0-a2.3          |DONE      |Manifest: NOSIGNATURE
+		improvedmobs-1.19-1.11.0-forge (1).jar            |Improved Mobs Mod             |improvedmobs                  |1.19-1.11.0         |DONE      |Manifest: NOSIGNATURE
+		expandability-forge-7.0.0.jar                     |ExpandAbility                 |expandability                 |7.0.0               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40.jar                    |GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+		celestisynth-1.19.2-1.1.3.jar                     |Celestisynth                  |celestisynth                  |1.19.2-1.1.3        |DONE      |Manifest: NOSIGNATURE
+		recruits-1.19.2-1.10.10.jar                       |Recruits Mod                  |recruits                      |1.10.10             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 236f14d8-463f-49f0-b50d-b06e219bb114
+	FML: 43.3
+	Forge: net.minecraftforge:43.3.9

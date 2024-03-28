@@ -1,0 +1,34 @@
+{
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-03-28 11:10:15 +0800"
+    },
+    "done": true
+  },
+  "cataclysm:root": {
+    "criteria": {
+      "custom_test_name": "2024-03-28 11:08:53 +0800"
+    },
+    "done": true
+  },
+  "morevillagers:root": {
+    "criteria": {
+      "always": "2024-03-28 11:08:53 +0800"
+    },
+    "done": true
+  },
+  "irons_spellbooks:grant_patchouli": {
+    "criteria": {
+      "tick": "2024-03-28 11:08:53 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_plains": "2024-03-28 11:08:55 +0800",
+      "minecraft:snowy_taiga": "2024-03-28 14:52:29 +0800"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}
